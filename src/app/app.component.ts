@@ -27,13 +27,10 @@ export class AppComponent implements OnInit {
     private treeService: TreeService
   ) {
     this.treeService.treeAction$.subscribe((data) => {
-      console.log('onClick', data);
       this.policyholder = data;
     })
     this.treeService.backLevel$.subscribe((data) => {
-      console.log('backLevel', data);
       const mainCodeObject = this.findObjectByValue(this.OriPolicyHolder, 'code', data);
-      console.log('mainCodeObject', mainCodeObject);
       if (mainCodeObject) {
         this.policyholder = mainCodeObject;
       } else {
