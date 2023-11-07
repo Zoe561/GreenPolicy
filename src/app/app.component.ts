@@ -46,7 +46,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.initForm();
-    this.searchPolicyholder();
   }
 
   private initForm() {
@@ -94,15 +93,15 @@ export class AppComponent implements OnInit {
 
 
   searchPolicyholder(): void {
-    // if (this.isFormValid()) {
+    if (this.isFormValid()) {
     this.policyholderService.getPolicyholder(this.code).subscribe((data) => {
       if (data) {
         this.OriPolicyHolder = data as Policy;
         this.policyholder = this.OriPolicyHolder;
       }
     })
-    // } else {
-    //   alert('保單號碼為必填欄位');
-    // }
+    } else {
+      alert('保單號碼為必填欄位');
+    }
   }
 }
