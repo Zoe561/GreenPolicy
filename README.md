@@ -1,6 +1,6 @@
 # GreenPolicy
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+本專案為二元樹狀圖的需求，以功能為導向設計的Demo，建議以桌機裝置(1920*1200)瀏覽。
 
 ## Development server
 
@@ -16,4 +16,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## MockAPI
 
-Mockoon
+測試時以 Mockoon 模擬API串接，測試用的JSON檔放在 assets 資料夾，如有需要可使用。
