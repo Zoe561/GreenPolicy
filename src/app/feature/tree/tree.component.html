@@ -1,0 +1,15 @@
+<ul *ngIf="level<4">
+  <li>
+    <app-card (click)="onPositiveClick(policyholder)" [grade]="getGradeColor(policyholder.introducer_code)"
+      [name]="policyholder.name" [policyNumber]="policyholder.code"></app-card>
+    <div (click)="onBack(policyholder.introducer_code)" class="pointer" *ngIf="level ===0">上一層</div>
+    <ul *ngIf="(policyholder.l.length>0 || policyholder.r.length>0) && level<3">
+      <li>
+        <app-tree [policyholder]="policyholder.l[0]" [mainCode]="mainCode" [level]="level + 1"></app-tree>
+      </li>
+      <li>
+        <app-tree [policyholder]="policyholder.r[0]" [mainCode]="mainCode" [level]="level + 1"></app-tree>
+      </li>
+    </ul>
+  </li>
+</ul>

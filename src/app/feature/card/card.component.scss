@@ -1,0 +1,22 @@
+.card {
+  padding: 15px;
+  border: 2px solid;
+  width: 130px;
+  display: inline-block;
+  height: 50px;
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+  }
+}
+.main {
+  background-color: lemonchiffon;
+}
+.direct {
+  background-color: lightgreen;
+}
+.indirect {
+  background-color: lightgrey;
+}

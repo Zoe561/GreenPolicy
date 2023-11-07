@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'grean-policy'`, () => {
+  it(`should have as title 'green-policy'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('grean-policy');
+    expect(app.title).toEqual('green-policy');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('grean-policy app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('green-policy app is running!');
   });
 });
