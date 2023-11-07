@@ -16,4 +16,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## MockAPI
 
-測試時以 Mockoon 模擬API串接，測試用的JSON檔放在 assets 資料夾，如有需要可使用。
+測試時以 Mockoon 模擬 API 串接，測試用的JSON檔放在 assets 資料夾，如有需要可使用。
